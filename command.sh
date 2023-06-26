@@ -1,0 +1,1 @@
+curl localhost:8585/ -H "content-type: application/xml" -d "$(cat ./data)"
