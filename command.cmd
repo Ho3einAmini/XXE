@@ -1,1 +1,1 @@
-curl 172.25.82.64:8585/ -H "content-type: application/xml" -d @data
+curl http://172.28.109.244:8182/ -H "content-type: application/xml" -d @data.txt

